@@ -69,3 +69,16 @@ The core trading engine that:
 git clone https://github.com/your-username/ai-event-trader.git
 cd ai-event-trader
 npm install
+
+### Ethereum MCP (Experimental)
+
+This repository now includes a minimal Ethereum MCP module in `ethereum-mcp/`. It provides
+helpers for querying Ethereum via ethers.js, executing token swaps through 1inch and
+staking ETH with Lido. To enable it:
+
+1. Copy `ethereum-mcp/.env.example` to `ethereum-mcp/.env` and fill in your RPC URL and keys.
+2. Run `npm install` inside `ethereum-mcp` and build with `npm run build`.
+3. Update `fastagent.config.yaml` to start the `ethereum` server.
+
+The Polygon functionality remains the default, but you can experiment with Ethereum
+support by running the new server.
