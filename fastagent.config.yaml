@@ -10,3 +10,7 @@ mcp:
       command: "node" # Start command
       args: ["./polygon-mcp/build/index.js"] # Command arguments
       # don't forget config SEED_PHRASE in polygon-mcp/.env
+    ethereum: # Ethereum MCP server configuration
+      command: "node"
+      args: ["./ethereum-mcp/build/index.js"]
+      # copy ethereum-mcp/.env.example to ethereum-mcp/.env and set values

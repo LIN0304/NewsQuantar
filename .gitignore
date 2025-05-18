@@ -1,0 +1,10 @@
+# Python caches
+__pycache__/
+
+# Node modules
+node_modules/
+
+# Environment files
+*.env
+
+# Build outputs
